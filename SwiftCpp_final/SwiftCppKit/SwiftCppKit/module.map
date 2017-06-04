@@ -1,4 +1,4 @@
-module SwiftCppExtern [system] {
+module SwiftCppExtern {
     header "SwiftCpp-PCH.h"
     export *
 }
