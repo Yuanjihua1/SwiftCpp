@@ -11,10 +11,14 @@ import SwiftCppKit
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let person = Person(name: "XiaoHong", age: 23, sex: false)
+//        person.introduceMySelf()
+        person.hello(other: Person())
         
     }
 

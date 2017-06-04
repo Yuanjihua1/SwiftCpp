@@ -12,8 +12,8 @@
 		22CE36591EE3DE2700136683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CE36571EE3DE2700136683 /* Main.storyboard */; };
 		22CE365B1EE3DE2700136683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CE365A1EE3DE2700136683 /* Assets.xcassets */; };
 		22CE365E1EE3DE2700136683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CE365C1EE3DE2700136683 /* LaunchScreen.storyboard */; };
-		22CE367B1EE3DE7300136683 /* SwiftCppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE367A1EE3DE7300136683 /* SwiftCppKit.framework */; };
-		22CE367C1EE3DE7300136683 /* SwiftCppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE367A1EE3DE7300136683 /* SwiftCppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22CE36821EE3F33A00136683 /* SwiftCppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE36811EE3F33A00136683 /* SwiftCppKit.framework */; };
+		22CE36831EE3F33A00136683 /* SwiftCppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22CE36811EE3F33A00136683 /* SwiftCppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22CE367C1EE3DE7300136683 /* SwiftCppKit.framework in Embed Frameworks */,
+				22CE36831EE3F33A00136683 /* SwiftCppKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		22CE365A1EE3DE2700136683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22CE365D1EE3DE2700136683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22CE365F1EE3DE2700136683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22CE367A1EE3DE7300136683 /* SwiftCppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CE36811EE3F33A00136683 /* SwiftCppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22CE367B1EE3DE7300136683 /* SwiftCppKit.framework in Frameworks */,
+				22CE36821EE3F33A00136683 /* SwiftCppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,6 @@
 		22CE36471EE3DE2700136683 = {
 			isa = PBXGroup;
 			children = (
-				22CE367A1EE3DE7300136683 /* SwiftCppKit.framework */,
 				22CE36521EE3DE2700136683 /* SwiftCppDemo */,
 				22CE36511EE3DE2700136683 /* Products */,
 			);
@@ -79,6 +78,7 @@
 				22CE365A1EE3DE2700136683 /* Assets.xcassets */,
 				22CE365C1EE3DE2700136683 /* LaunchScreen.storyboard */,
 				22CE365F1EE3DE2700136683 /* Info.plist */,
+				22CE36811EE3F33A00136683 /* SwiftCppKit.framework */,
 			);
 			path = SwiftCppDemo;
 			sourceTree = "<group>";

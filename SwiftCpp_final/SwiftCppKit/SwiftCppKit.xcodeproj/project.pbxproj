@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		22CE36741EE3DE3600136683 /* SwiftCppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CE36721EE3DE3600136683 /* SwiftCppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22CE36871EE3F50F00136683 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CE36851EE3F50F00136683 /* Person.cpp */; };
+		22CE36881EE3F50F00136683 /* Person.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22CE36861EE3F50F00136683 /* Person.hpp */; };
+		22CE368A1EE3FB0200136683 /* PersonExtern.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CE36891EE3FB0200136683 /* PersonExtern.h */; };
+		22CE36901EE409AB00136683 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE368F1EE409AB00136683 /* Person.swift */; };
+		22CE36931EE41F9100136683 /* SwiftCpp-PCH.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CE36921EE41F9100136683 /* SwiftCpp-PCH.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22CE366F1EE3DE3600136683 /* SwiftCppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CE36721EE3DE3600136683 /* SwiftCppKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCppKit.h; sourceTree = "<group>"; };
 		22CE36731EE3DE3600136683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CE36851EE3F50F00136683 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		22CE36861EE3F50F00136683 /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
+		22CE36891EE3FB0200136683 /* PersonExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonExtern.h; sourceTree = "<group>"; };
+		22CE368F1EE409AB00136683 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		22CE36921EE41F9100136683 /* SwiftCpp-PCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftCpp-PCH.h"; sourceTree = "<group>"; };
+		22CE36951EE4245000136683 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +57,24 @@
 		22CE36711EE3DE3600136683 /* SwiftCppKit */ = {
 			isa = PBXGroup;
 			children = (
+				22CE36841EE3F4FB00136683 /* CPP */,
 				22CE36721EE3DE3600136683 /* SwiftCppKit.h */,
 				22CE36731EE3DE3600136683 /* Info.plist */,
+				22CE36921EE41F9100136683 /* SwiftCpp-PCH.h */,
+				22CE36951EE4245000136683 /* module.map */,
 			);
 			path = SwiftCppKit;
+			sourceTree = "<group>";
+		};
+		22CE36841EE3F4FB00136683 /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				22CE36891EE3FB0200136683 /* PersonExtern.h */,
+				22CE368F1EE409AB00136683 /* Person.swift */,
+				22CE36851EE3F50F00136683 /* Person.cpp */,
+				22CE36861EE3F50F00136683 /* Person.hpp */,
+			);
+			name = CPP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +84,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CE36931EE41F9100136683 /* SwiftCpp-PCH.h in Headers */,
 				22CE36741EE3DE3600136683 /* SwiftCppKit.h in Headers */,
+				22CE368A1EE3FB0200136683 /* PersonExtern.h in Headers */,
+				22CE36881EE3F50F00136683 /* Person.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +124,7 @@
 					22CE366E1EE3DE3600136683 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = YNQK9CAK37;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CE36901EE409AB00136683 /* Person.swift in Sources */,
+				22CE36871EE3F50F00136683 /* Person.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +273,7 @@
 		22CE36781EE3DE3600136683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YNQK9CAK37;
@@ -251,9 +283,12 @@
 				INFOPLIST_FILE = SwiftCppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiuye.SwiftCppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftCppKit";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +296,7 @@
 		22CE36791EE3DE3600136683 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YNQK9CAK37;
@@ -270,9 +306,11 @@
 				INFOPLIST_FILE = SwiftCppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lixiuye.SwiftCppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SwiftCppKit";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -296,6 +334,7 @@
 				22CE36791EE3DE3600136683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
