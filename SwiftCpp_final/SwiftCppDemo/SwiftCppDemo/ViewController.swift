@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         let person = Person(name: "XiaoHong", age: 23, sex: false)
 //        person.introduceMySelf()
         person.hello(other: Person())
+        
     }
 
     override func didReceiveMemoryWarning() {
